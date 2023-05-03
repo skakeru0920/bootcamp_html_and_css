@@ -25,7 +25,7 @@ nav {
 	top: 0;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 20px;
+	padding-left: 20px;
 	align-items: center;
 }
 
@@ -33,18 +33,101 @@ nav {
 	width: 35px;
 }
 
-.nav-contents > ul {
+.nav-contents {
+	display: none;
+}
+
+.nav-hamburger {
 	display: flex;
+	height: 60px;
+	width: 60px;
+	justify-content: center;
 	align-items: center;
-	height: 80px;
+	background-color: blueviolet;
 }
 
-.nav-contents-item {
+/* 三本線の実装 */
+.nav-hamburger span,
+.nav-hamburger span:before,
+.nav-hamburger span:after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 30px;
+	border-radius: 3px;
+	background-color: #ffffff;
+	position: absolute;
+}
+.nav-hamburger span:before {
+	bottom: 8px;
+}
+.nav-hamburger span:after {
+	top: 8px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	display: block;
+	padding: 0 20px;
+	justify-content: none;
+	align-items: none;
+}
+
+.footer-contents > ul {
+	display: block;
+	align-items: center;
+}
+
+.footer-contents-item {
 	list-style: none;
-	margin-left: 20px;
 	font-size: 20px;
+	display: block;
+	border-bottom: 1px solid gray;
+	padding: 20px 0;
 }
 
-.underline {
-	border-bottom: 2px solid blueviolet;
+.copyright {
+	padding: 40px 0;
+	font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	.nav-hamburger {
+		display: none;
+	}
+	.nav-contents {
+		display: block;
+		padding-right: 20px;
+	}
+	.nav-contents > ul {
+		display: flex;
+		align-items: center;
+		height: 80px;
+	}
+	.nav-contents-item {
+		list-style: none;
+		margin-left: 20px;
+		font-size: 20px;
+	}
+	.underline {
+		border-bottom: 2px solid blueviolet;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row-reverse;
+	}
+
+	.footer-contents > ul {
+		display: flex;
+		align-items: center;
+	}
+
+	.footer-contents-item {
+		border-bottom: none;
+		margin-left: 20px;
+	}
 }
