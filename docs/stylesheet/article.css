@@ -1,1 +1,67 @@
 /* 記事ページのCSS */
+
+article {
+	padding: 20px;
+}
+
+.article__title {
+	font-size: 28px;
+}
+.article__img {
+	padding-top: 20px;
+}
+
+.article__meta {
+	margin-top: 15px;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	flex-direction: column;
+}
+
+.article__meta-item {
+	margin-left: 10px;
+	color: gray;
+	font-size: 16px;
+}
+
+.articleard__meta-item:first-child {
+	margin-left: 0;
+}
+
+section {
+	max-width: 1120px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+section:first-child {
+	margin-top: 0px;
+}
+
+.section__title {
+	font-size: 24px;
+	border-left: 3px solid blueviolet;
+	padding-left: 10px;
+}
+.section__text {
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 32px;
+}
+@media screen and (min-width: 768px) {
+	.article__meta {
+		align-items: baseline;
+		flex-direction: unset;
+	}
+
+	/* .article__meta-item {
+		margin-left: 10px;
+		color: gray;
+		font-size: 16px;
+	}
+
+	.articleard__meta-item:first-child {
+		margin-left: 0;
+	} */
+}

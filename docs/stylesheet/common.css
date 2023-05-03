@@ -27,6 +27,7 @@ nav {
 	justify-content: space-between;
 	padding-left: 20px;
 	align-items: center;
+	border-bottom: 1px solid #ccc;
 }
 
 .nav-logo {
@@ -59,10 +60,10 @@ nav {
 	position: absolute;
 }
 .nav-hamburger span:before {
-	bottom: 8px;
+	bottom: 10px;
 }
 .nav-hamburger span:after {
-	top: 8px;
+	top: 10px;
 }
 
 footer {

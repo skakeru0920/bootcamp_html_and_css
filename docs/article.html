@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head prefix="og: https://ogp.me/ns#">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Let's master CSS flexboxes! | Progate Path Developers Blog</title>
-    <meta
-      name="description"
-      content="Introducing the developmental use of flexboxes in CSS"
-    />
-    <link rel="stylesheet" href="./stylesheet/reset.css" />
-    <link rel="stylesheet" href="./stylesheet/common.css" />
-    <link rel="stylesheet" href="./stylesheet/article.css" />
-  </head>
-  <body>
-  </body>
+	<head prefix="og: https://ogp.me/ns#">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Let's master CSS flexboxes! | Progate Path Developers Blog</title>
+		<meta
+			name="description"
+			content="Introducing the developmental use of flexboxes in CSS"
+		/>
+		<link rel="stylesheet" href="./stylesheet/reset.css" />
+		<link rel="stylesheet" href="./stylesheet/common.css" />
+		<link rel="stylesheet" href="./stylesheet/article.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="nav-logo">
+				<a href="top.html"><img src="./images/logo.svg" alt="logo" /></a>
+			</div>
+			<div class="nav-hamburger"><span></span></div>
+			<div class="nav-contents">
+				<ul>
+					<li class="nav-contents-item underline">
+						<a href="top.html">Top</a>
+					</li>
+					<li class="nav-contents-item"><a href="#">Articles</a></li>
+					<li class="nav-contents-item"><a href="#">Members</a></li>
+					<li class="nav-contents-item"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<article>
+				<h1 class="article__title">Let's master CSS flexboxes!</h1>
+				<div class="article__img">
+					<img src="./images/article_thumbnail.png" />
+				</div>
+				<div class="article__meta">
+					<span class="article__meta-item">Taro Tanaka</span>
+					<span class="article__meta-item">2023/03/20</span>
+				</div>
+				<section>
+					<h2 class="section__title">What is a Flex Box?</h2>
+					<p class="section__text">
+						Hello, this is Tanaka from Progate My name is Tanaka from Path. In
+						this article, I'd like to introduce a more advanced use of flexbox.
+						CSS Flexbox (Flexible Box LayoutModule) is a layout model for
+						efficiently arranging, aligning, and distributing items within a
+						container. Flex boxes are controlled by properties applied to the
+						parent element (flex container) and child elements (flex items).
+						This allows items of variable width and height to be easily adjusted
+						to achieve responsive design for a variety of devices and screen
+						sizes.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="section__title">display: flex;</h2>
+					<p class="section__text">
+						To use a flexbox, first add a parent element with display:. flex; or
+						display: inline-flex; to the parent element. inline-flex; to the
+						parent element. This makes the element a flex container and the
+						child elements flex items.
+					</p>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<div class="footer-contents">
+				<ul>
+					<li class="footer-contents-item"><a href="#">Site Policy</a></li>
+					<li class="footer-contents-item"><a href="#">Privacy Policy</a></li>
+					<li class="footer-contents-item"><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+			<div class="copyright">©️ 2023 Sample, Inc.</div>
+		</footer>
+		<!-- 以下のタグを使う
+      header
+      main
+      article
+      section -->
+	</body>
 </html>
